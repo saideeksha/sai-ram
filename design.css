@@ -1,0 +1,55 @@
+
+.menu-body {
+  max-width: 480px;
+  margin: 0 auto;
+  display: block;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease-in-out;
+  background-image: url("E:/restaurant/menubg.jpg");
+}
+.menu-body:hover {
+	transform: rotateY( 180deg );
+}
+.menu-body .back{
+	backface-visibility: hidden;
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+	
+}
+.menu-body .side{
+	transform: rotateY( 180deg );
+}
+.menu-section-title {
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  color: black;
+  font-weight:normal; 
+  text-align: Center;
+}
+.menu-item {
+  font-size: 20px;
+}
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  color: green;
+  border-bottom: 2px dotted rgb(113, 113, 113);
+}
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  color:black;
+  margin-top: -22px;
+}
+.menu-total{
+	text-align: Center;
+	font-size: 20px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-family: helvetica;
+	color:black;
+}

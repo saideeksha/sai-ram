@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Menu</title>
+	<link rel="stylesheet" type="text/css" href="css/design.css">
+	<style>
+	body {
+		background: url("E:/restaurant/main.jpg");
+		}
+		</style>
+	<script type="text/javascript">
+	function billme() 
+	{
+		var errorMsgs = [];
+		var v1=document.order.friedriceqty.value;
+		var v2=document.order.briyaniqty.value;
+		var v3=document.order.noodlesqty.value;
+		var v4=document.order.frenchfriesqty.value;
+		v1= parseInt(v1);
+		v2= parseInt(v2);
+		v3= parseInt(v3);
+		v4= parseInt(v4);
+		var v5=v1*50;
+		var v6=v2*70;
+		var v7=v3*40;
+		var v8=v4*30;
+		if (v1 < 0)
+		{
+			v1= 0;
+		}
+		if (v2 < 0)
+		{
+			v2= 0;
+		}
+		if (v3 < 0)
+		{
+			v3= 0;
+		}
+		if (v4 < 0)
+		{
+			v4= 0;
+		}
+		
+		if ((v1 == 0)&&(v2 == 0)&&(v3 == 0)&&(v4 == 0))
+		{
+			alert("select any dish");
+		}
+		order.total.value= (v1*50)+(v2*70)+(v3*40)+(v4*30)
+	}
+	function summary()
+	{
+		var v1=document.order.friedriceqty.value;
+		var v2=document.order.briyaniqty.value;
+		var v3=document.order.noodlesqty.value;
+		var v4=document.order.frenchfriesqty.value;
+		v1= parseInt(v1);
+		v2= parseInt(v2);
+		v3= parseInt(v3);
+		v4= parseInt(v4);
+		var v5=v1*50;
+		var v6=v2*70;
+		var v7=v3*40;
+		var v8=v4*30;
+		if (v1 < 0)
+		{
+			v1= 0;
+		}
+		if (v2 < 0)
+		{
+			v2= 0;
+		}
+		if (v3 < 0)
+		{
+			v3= 0;
+		}
+		if (v4 < 0)
+		{
+			v4= 0;
+		}
+		order.total.value= (v1*50)+(v2*70)+(v3*40)+(v4*30)
+		if ((v1 == 0)&&(v2 == 0)&&(v3 == 0)&&(v4 == 0))
+		{
+			alert("select any dish");
+		}
+		if ((v1 != 0) && (v2 !=0) && (v3 != 0) && (v4 != 0))
+		{
+			alert("\n HERE IS UR ORDER :)\n\n\n fried rice    \t"+ v1 + " \t   "+ v5 +
+				   "\n briyani      \t"+ v2 +" \t    "+ v6 +
+				   "\n noodles     \t"+ v3 +" \t    "+ v7 +
+				   "\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if (( v1 ==0) && (v2 !=0) && (v3 != 0) && (v4 != 0))
+		{
+			alert( "\n HERE IS YOUR ORDER :)\n"+
+				   "\n briyani      \t"+ v2 +" \t    "+ v6 +
+				   "\n noodles     \t"+ v3 +" \t    "+ v7 +
+				   "\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v1 != 0)  && (v2 == 0) && (v3 != 0) && (v4 != 0))
+		{
+			alert("\n HERE IS YOUR ORDER :) \n\nfried rice    \t"+ v1 + " \t   "+ v5 +
+				   "\n noodles     \t"+ v3 +" \t    "+ v7 +
+				   "\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v1 != 0) && (v2 !=0) && (v3 == 0) && (v4 != 0))
+		{
+			alert("\n HERE IS YOUR ORDER :) \n\nfried rice    \t"+ v1 + " \t   "+ v5 +
+				   "\n briyani      \t"+ v2 +" \t    "+ v6 +
+				   "\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v1 != 0) && (v2 !=0) && (v3 != 0) && (v4 == 0))
+		{
+			alert("\n HERE IS UR ORDER :)\n\nfried rice    \t"+ v1 + " \t   "+ v5 +
+				   "\n briyani      \t"+ v2 +" \t    "+ v6 +
+				   "\n noodles     \t"+ v3 +" \t    "+ v7 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v1 != 0) && (v2 !=0) && (v3 ==0) && (v4 == 0))
+		{
+			alert("\n HERE IS UR ORDER :) \n\nfried rice    \t"+ v1 + " \t   "+ v5 +
+				   "\n briyani      \t"+ v2 +" \t    "+ v6 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v1 != 0) && (v3 != 0) && (v2 == 0) && (v4 == 0))
+		{
+			alert("\n HERE IS UR ORDER :)\n\nfried rice    \t"+ v1 + " \t   "+ v5 +
+				   "\n noodles     \t"+ v3 +" \t    "+ v7 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v1 != 0) && (v4 != 0) && (v2 == 0) && (v3 == 0))
+		{
+			alert("\n HERE IS UR ORDER :)\n\nfried rice    \t"+ v1 + " \t   "+ v5 +
+				   "\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v2 !=0) && (v3 != 0) && (v1 == 0) && (v4 == 0))
+		{
+			alert("\n HERE IS YOUR ORDER :)\n\nbriyani      \t"+ v2 +" \t    "+ v6 +
+				   "\n noodles     \t"+ v3 +" \t    "+ v7 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v2 !=0) && (v4 != 0) && (v1 == 0) && (v3 == 0))
+		{
+			alert("\n HERE IS YOUR ORDER :)\n\n briyani      \t"+ v2 +" \t    "+ v6 +
+				  "\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				  "\n total cost                   "+ order.total.value +
+				  "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v3 != 0) && (v4 != 0) && (v1 == 0) && (v2 == 0))
+		{
+			alert("\n HERE IS YOUR ORDER :)\n\n noodles     \t"+ v3 +" \t    "+ v7 +
+				   "\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v1 != 0) && (v2 == 0) && (v3 == 0) && (v4 == 0))
+		{
+			alert("\n HERE IS YOUR ORDER :)\n\nfried rice    \t"+ v1 + " \t   "+ v5 +
+				  "\n total cost                   "+ order.total.value +
+				  "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v2 !=0) && (v1 == 0) && (v3 == 0) && (v4 == 0))
+		{
+			alert("\n HERE IS YOUR ORDER :)\n\nbriyani      \t"+ v2 +" \t    "+ v6 +
+				   "\n total cost                   "+ order.total.value +
+				   "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v3 != 0) && (v1 == 0) && (v2 == 0) && (v4 == 0))
+		{
+			alert("\n HERE IS YOUR ORDER :)\n\n noodles     \t"+ v3 +" \t    "+ v7 +
+				  "\n total cost                   "+ order.total.value +
+				  "\n THANK YOU!! VISIT AGAIN :)");
+		}
+		if ((v4 != 0) && (v1 == 0) && (v2 == 0) && (v3 == 0))
+		{
+			alert("\n HERE IS UR ORDER :)\n\n frenchfries \t"+ v4 +" \t    "+ v8 +
+				  "\n total cost                   "+ order.total.value +
+				  "\n THANK YOU!! VISIT AGAIN :)");
+		}
+	}
+
+</script>
+</head>
+
+<body >
+<form id=order name=order  >
+	<div class="menu-body">
+	<div class="back">
+	want to taste our food??
+	move over me :)</div>
+		<div class="back side">
+			<h2 class="menu-section-title">ORDER NOW</h2>
+			<div class="menu-item">
+				<div class="menu-item-name">
+					fried rice
+				</div>
+				<div class="menu-item-price">
+					$50
+				<input type="text" name="friedriceqty" size="2" value="0">
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-item-name">
+					briyani
+				</div>
+				<div class="menu-item-price">
+					$70
+				<input type="text" name="briyaniqty" size="2" value="0">
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-item-name">
+					noodles
+				</div>
+				<div class="menu-item-price">
+					$40
+				<input type="text" name="noodlesqty" size="2" value="0">
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-item-name">
+					french fries
+				</div>
+				<div class="menu-item-price">
+					$30
+				<input type="text" name="frenchfriesqty" size="2" value="0">
+				</div>
+			</div>
+		<div class="menu-total">
+		<br>
+		TOTAL AMOUNT:$<input type="text" name="total" size="6" value="0" />
+		<br>
+		<br>
+		<input type="button" name="calcBtn" value="order now" onclick="billme(document.order)" />
+		<br>
+		<br>
+		<input type="reset" value="clear">
+		<br>
+		<br>
+		<input type="button" name="summbtn" value="confirm order" onclick="summary(document.order)" />
+		<br>
+		<br>
+		<br>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
